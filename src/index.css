@@ -2,3 +2,83 @@
 @tailwind components;
 @tailwind utilities;
 
+
+* {
+    box-sizing: border-box;
+    font-family: 'Sora';
+}
+
+
+.flex-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.signin{
+    
+    color: black;
+    border: solid #156ACE 3px;
+    border-radius: 4px;
+    padding: 8px;
+    min-width: 90px;
+    font-size: 16px;
+    text-align: center;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    border-left-width: 3px;
+    border-right-width: 3px;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+
+.signup{
+    padding: 8px;
+    color: white;
+    background-color: #15ADCE;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    
+    
+
+}
+
+.signin:hover{
+    color: #ffffff;
+    background-color: #156ACE;
+    transition: ease-out 0.3s;
+
+}
+
+.signin:active{
+    background-color: blue;
+    transition: ease-in-out 0.1s;
+}
+
+.signup:hover{
+    color: #ffffff;
+    background-color: #156ACE;
+    transition: ease-out 0.8s;
+    
+}
+
+.signup:active{
+    background-color: blue;
+    transition: ease-in-out 0.1s;
+    
+}
+.logo{
+    font-size: 28px;
+    
+    font-weight: bold;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+
