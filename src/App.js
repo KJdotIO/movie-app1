@@ -1,24 +1,21 @@
-import {useState, useEffect} from 'react';
+
+import Navbar from './Components/Navbar';
 
 function App() {
-
-  const [updateCounter, setUpdateCounter] = useState(0)
-
-  const handleCounter = () => {
-    setUpdateCounter(updateCounter + 1)
-  }
-
-  return (
-    <main className="bg-[#191919] main-cont">
-      <section class = "main-landing-stuff">
-        <h1 class="tagline">Discover Your New Favourite Film!</h1>
-        <p>Dive into a cinematic journey tailored just for you. Our advanced algorithms match you with movies that resonate with your tastes, ensuring every recommendation is a potential new favourite. No more endless scrolling; just pure cinematic joy.</p>
-        <div class="start-exploring-cont">
-        <button type="button" class="start-exploring">Start Exploring Now!</button>
-        </div>
-      </section>
-    </main>
-  );
+    return (
+        <>
+            <Navbar/>
+            <main className="bg-#191919 max-h-screen main-cont">
+                <section className="main-landing-stuff">
+                    <h1 className="tagline">Discover Your New Favourite Film!</h1>
+                    <p>Dive into a cinematic journey tailored just for you. Our advanced algorithms match you with movies that resonate with your taste</p>
+                    <div className="start-exploring-cont">
+                        <button type="button" className="start-exploring">Start Exploring Now!</button>
+                    </div>
+                </section>
+            </main>
+        </>
+    );
 }
 
 export default App;
